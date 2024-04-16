@@ -46,7 +46,7 @@ def send_email(name, email, msg):
 
 @app.route('/download')
 def download_resume():
-    return send_from_directory("../final-portfolio-website/static", 'resume/cheat_sheet.pdf')
+    return send_from_directory("../final-portfolio-website/static", 'resume/amits_resume.pdf')
 
 @app.route('/download_ml_certificate')
 def download_ml_certificate():
