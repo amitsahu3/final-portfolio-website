@@ -46,15 +46,15 @@ def send_email(name, email, msg):
 
 @app.route('/download')
 def download_resume():
-    return send_from_directory("../final-portfolio-website/static", 'resume/amits_resume.pdf')
+    return send_from_directory("./static", 'resume/amits_resume.pdf')
 
 @app.route('/download_ml_certificate')
 def download_ml_certificate():
-    return send_from_directory("../final-portfolio-website/static", 'certificates/machine_learning_certificate.pdf')
+    return send_from_directory("./static", 'certificates/machine_learning_certificate.pdf')
 
 @app.route('/download_python_certificate')
 def download_python_certificate():
-    return send_from_directory("../final-portfolio-website/static", 'certificates/python_bootcamp_certificate.pdf')
+    return send_from_directory("./static", 'certificates/python_bootcamp_certificate.pdf')
 
 if __name__=="__main__":
     app.run(debug=False)
